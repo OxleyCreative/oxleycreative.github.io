@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+	<link rel="icon" href="favicon.ico" type="image/x-icon"> 
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/style.js"></script>
+	
+<title>Oxley Creative</title>
+</head>
+
+<body>
+<div id="container">
+	<div id="header">
+			<h1 id="logo"><img src="images/oxleylogow.jpg" alt="Oxley Creative Logo" /></h1>
+			<p id="slogan">"Working harder than an ox to create beautiful, smart, intuitive solutions that bring life and narrative to any brand or project."</p>
+			<div id="navbar">
+				<ul>
+					<li><a href="index.html">Blog</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a id="currentpage" href="contact.html">Contact Us</a></li>
+				</ul>
+			</div>
+			
+	</div>
+	<div id="content">
+	<form id="contactform" method="post" action="contact_process.php">
+	<fieldset>
+	<legend class="title"><< Contact Us >></legend>
+	<ol>
+		<li><label for="form-name">Your Name:</label><input type="text" name="name" id="form-name"/></li>
+		    
+		<li><label for="form-email">Your Email Address:</label><input type="text" name="email" id="form-email"/></li>
+		  
+		<li><label for="form-subject">Subject:</label><input type="text" name="subject" id="form-subject" /></li>
+		  
+		<li><label for="form-text">Your Message:</label><textarea name="text" cols="50" rows="10" id="form-text"></textarea></li>
+		</ol>
+		
+		  <span>
+		    <input class="submitbutton" type="submit" name="Submit" value="Submit" />
+		    <input type="hidden" name="required" value="name email" />
+		    <input type="hidden" name="autoresponse_file" value="sample.txt" />
+		    <input type="hidden" name="followup_url" value="thanks.html" />
+		  </span>
+		
+		
+	</fieldset>
+	</form>
+	<div id="contactinfo">
+	<h3>Address</h3>
+	<p>479 N. Harlem Ave. Apt. 1425<br>
+    Oak Park, IL 60301</p>
+	<h3>Robert Oxley</h3>
+	<h4 class="infotitle">Phone:</h4>
+	<p>269.930.2383</p>
+	<h4 class="infotitle">E-mail:</h4>
+	<p>robert.at.oxley@gmail.com</p>
+	<h3>Steven Oxley</h3>
+	<h4 class="infotitle">Phone:</h4>
+	<p>269.930.0279</p>
+	<h4 class="infotitle">E-mail:</h4>
+	<p>steven.aj.oxley@gmail.com</p>
+	</div>
+	
+</div>
+<div id="footer">
+<p>
+Copyright &copy; 2012 Robert Oxley. Design by Robert Oxley. All Rights Reserved.
+</p>
+</div>
+</body>
+
+</html>

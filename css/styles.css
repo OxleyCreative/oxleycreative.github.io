@@ -1,0 +1,396 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Emblema+One);
+
+body
+{
+font: .9em/1.5em Arial, sans-serif;
+background-color: #fff;
+background-image: url('../images/top.jpg');
+background-repeat: repeat-x;
+}
+h1
+{
+font-family: bold 'Oswald', sans-serif;
+text-transform: uppercase;
+}
+h2, h3, h4, h5
+{
+font-family: 'Emblema One', serif;
+}
+h3
+{
+font-size: 1.4em;
+line-height: 2em
+}
+
+#container
+{
+width: 960px;
+margin: auto;
+}
+#logo
+{
+
+float: left;
+
+}
+#slogan
+{
+font-family: 'Oswald', sans-serif;
+text-transform: uppercase;
+text-indent: -10px;
+padding-left:15px;
+float: right;
+width: 680px;
+padding: 30px 0px 0px 5px;
+font-size: 2em;
+line-height: 1.5em;
+color: #dcdcdc;
+}
+
+.sticker
+{
+margin: 25px;
+margin-right: 185px;
+clear: both;
+}
+img.sticker + img.sticker + img.sticker
+{
+margin-right: 0px;
+}
+
+#navbar
+{text-align:right;
+width: 960px;
+clear:both;
+border-bottom: dotted;
+border-width: 1px;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+div.sectionnavhead
+{
+clear:both;
+border-bottom: dotted;
+border-width: 1px;
+}
+div.sectionnavhead:first-child
+{
+border-top: dotted;
+border-width: 1px;
+}
+#sectionnav h2
+{
+text-align:center;
+}
+#sectionnav a
+{
+color: #fff;
+text-decoration: none;
+font: 1.5em 'Oswald', sans-serif;
+}
+#sectionnav li>a
+{
+font: 1.1em 'Oswald', sans-serif;
+}
+
+#sectionnav a:hover
+{
+color: #000;
+}
+#sectionweb
+{
+background-color: #60fff9;
+}
+#sectionposter
+{
+background-color: #cbffca;
+}
+#sectionidentity
+{
+background-color: #bcffe0;
+}
+#sectioneditorial
+{
+background-color: #b5fcff;
+}
+#sectionmiscellaneous
+{
+background-color: #ffce6f;
+}
+
+
+#navbar li
+{
+display: inline;
+text-transform: uppercase;
+padding-right: 20px;
+}
+#navbar a#currentpage
+{
+color: #15bbac;
+}
+#navbar a#currentpage:hover
+{
+color: #dcdcdc;
+}
+#navbar a
+{
+color: #999;
+text-decoration: none;
+font: 1.7em 'Emblema One', sans-serif;
+}
+#navbar a:hover
+{
+color: #dcdcdc;
+}
+#content
+{
+clear:both;
+}
+.portdesc
+{
+clear:both;
+color: #999999;
+font-family: 'Oswald', sans-serif;
+text-transform: uppercase;
+font-size: 1.2em;
+float: left;
+width: 310px;
+padding-right: 10px;
+}
+.portdesc p
+{
+padding-bottom: 15px;
+}
+#sectionnav div.portdesc a
+{
+text-transform: none;
+color: #15bbac;
+font: .8em 'Emblema One', sans-serif;
+}
+#sectionnav div.portdesc a:hover
+{
+color: #dcdcdc;
+}
+.portdesc h3
+{
+padding-top: 15px;
+color: #15bbac;
+padding-bottom: 15px;
+font-size: 1em;
+line-height: 1.1em;
+}
+.portmainimg
+{
+float: right;
+}
+#footer
+{
+clear:both;
+color:#999;
+padding: 20px;
+text-align: center;
+}
+
+.sectionnavhead h2
+{
+width:320px;
+float: left;
+
+}
+.sectionnavhead ul
+{
+float: right;
+width: 640px;
+}
+.sectionnavhead li
+{
+padding: 10px;
+margin-right: 15px;
+float: left;
+}
+.sectionnavhead li>a
+{
+padding: 5px;
+border-left: dotted;
+border-right: dotted;
+border-width: 1px;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+div.project
+{
+padding-top: 15px;
+padding-bottom: 15px;
+border-bottom: dotted;
+border-width: 1px;
+}
+#blognav a:hover
+{
+color: #dcdcdc;
+}
+#blognav a
+{
+text-decoration: none;
+color: #15bbac;
+}
+#blognav li>a
+{
+color: #999;
+}
+#blognav
+{
+float:left;
+padding-top: 30px;
+width: 230px;
+color: #15bbac;
+}
+#blognav ul
+{
+padding-left: 15px;
+}
+#blognav h2
+{
+border-bottom: dotted;
+border-width: 1px;
+}
+#blognav ul
+{
+border-bottom: dotted;
+border-width: 1px;
+}
+#blognav img
+{
+padding-top: 20px;
+padding-bottom: 5px;
+}
+#blognav p
+{
+padding-bottom: 15px;
+font-family: 'Oswald', sans-serif;
+border-bottom: dotted;
+border-width: 1px;
+font-size: 1em;
+color: #999;
+}
+#blognav p:last-child
+{
+border-bottom: none;
+}
+div#blogcontent
+{
+padding-top: 25px;
+float:right;
+width: 640px;
+}
+.blogentry
+{
+border-bottom: dotted;
+border-width: 1px;
+padding-bottom: 15px;
+padding-top: 15px;
+}
+.blogentry:first-child
+{
+padding-top: 0px;
+}
+.blogentry h3
+{
+color: #15bbac;
+}
+.blogentry p
+{
+margin-bottom: 1em;
+}
+.blogentry p:last-child
+{
+margin-bottom: 0px;
+}
+.title
+{
+padding-bottom: 15px;
+font-family: 'Oswald', sans-serif;
+text-transform: uppercase;
+font-size: 2em;
+line-height: 1.5em;
+color: #dcdcdc;
+}
+#contactform
+{
+float: left;
+padding-right: 30px;
+border-right: dotted;
+border-width: 1px;
+width: 629px;
+}
+#contactform label
+{
+font: 1.1em 'Emblema One', sans-serif;
+display: inline-block;
+width: 200px;
+}
+label[for="form-text"]
+{
+float: left;
+padding-top: 3px;
+}
+#contactform input.submitbutton
+{
+font-family: 'Oswald', sans-serif;
+text-transform: uppercase;
+font-size: 1.3em;
+line-height: 1.5em;
+color: #15bbac;
+float: right;
+}
+#contactform li
+{
+color: #15bbac;
+padding-bottom: 10px;
+}
+#contactinfo
+{
+color: #15bbac;
+width: 270px;
+float: right;
+}
+#contactinfo p
+{
+color: #dcdcdc;
+padding-bottom: 10px;
+font-family: 'Oswald', sans-serif;
+text-transform: uppercase;
+font-size: 1.1em;
+line-height: 1.2em;
+}
+.service
+{
+margin-bottom: 30px;
+width: 280px;
+margin-right:55px;
+float: left;
+}
+div.service:last-child
+{
+margin-right: 0px;
+}
+.service h3
+{
+color: #15bbac;
+}
+.service p
+{
+color: #999;
+padding-bottom: 10px;
+font-family: 'Oswald', sans-serif;
+text-transform: uppercase;
+font-size: 1.1em;
+line-height: 1.2em;
+}
