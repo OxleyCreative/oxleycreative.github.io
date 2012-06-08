@@ -98,7 +98,7 @@ $(document).ready(function()
   $("#webcontent").hide();
   $("#postercontent").hide();
   $("#identitycontent").hide();
-  $("#editorialccontent").hide();
+  $("#editorialcontent").hide();
     $("#sectionmiscellaneous ul").slideToggle(600);
 	$("#misccontent").slideToggle(1500);
   });
