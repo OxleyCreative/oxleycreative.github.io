@@ -258,6 +258,7 @@ padding-left: 15px;
 }
 #blognav h2
 {
+font-size: 1.1em;
 border-bottom: dotted;
 border-width: 1px;
 }
@@ -313,6 +314,14 @@ margin-bottom: 1em;
 {
 margin-bottom: 0px;
 }
+.byline
+{
+padding-top: 5px;
+display: block;
+color: #dcdcdc;
+font: 1.5em 'Oswald', sans-serif;
+}
+
 .title
 {
 padding-bottom: 15px;
