@@ -2,8 +2,8 @@
 <html>
 <head>
 <meta charset="utf-8" />
-	<link rel="icon" href="favicon.ico" type="image/x-icon"> 
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon"> 
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="css/reset.css" />
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -13,74 +13,127 @@
 </head>
 
 <body>
-<div id="container">
-	<div id="header">
-			<h1 id="logo"><img src="images/oxleylogow.jpg" alt="Oxley Creative Logo" /></h1>
-			<p id="slogan">"Working harder than an ox to create beautiful, smart, intuitive solutions that bring life and narrative to any brand or project."</p>
-			<div id="navbar">
-				<ul>
-					<li><a id="currentpage" href="index.html">Blog</a></li>
-					<li><a href="portfolio.html">Portfolio</a></li>
-					<li><a href="services.html">Services</a></li>
-					<li><a href="contact.html">Contact Us</a></li>
-				</ul>
-			</div>
-			
+<section class="header">
+  <div class="contentBox">
+    <img src="images/ox_logo.svg" alt="Oxley Creative Logo" />
+	<h1 class="sectionTitle">Oxley Creative</h1>
+	<p>Working harder than an ox to bring beautiful, smart, intuitive solutions to any brand or project.</p>
+  </div>
+</section>
+<section class="intro content">
+	<h1 class="sectionTitle">The Talent</h1>
+  <div class="bio">
+    <img src="images/portrait.jpg" alt="Robert Oxley Portrait" />
+	<div>
+	<h3 class="name">Robert Oxley</h3>
+	<p class="quote">&ldquo;Front-end is my jam, baby.&rdquo;</p>
+	<p>For the past few years, Robert has been at TireRack.com working to bring the best online tire buying experience possible to consumers around the world.</p>
+	<a href="images/resume.pdf" target="_blank">Resume</a>
 	</div>
-	<div id="content">
-	<h2 class="title">&lt;&lt; A Blog for the Digital Generation >></h2>
-	<div id="blog">
-				<div id="blognav">
-				<div id="blogtopic1">
-					<h2><a href="#" onclick="return false">General</a></h2>
-					<ul>
-					<li><a href="#introductions">>> Introductions</a></li>
-					
-					</ul>
-				</div>
-				<div id="blogtopic2">
-					<h2><a href="#" onclick="return false">Web Design</a></h2>
-					<ul>
-					<li><a href="#">>> None</a></li>
-					
-					</ul>
-				</div>
-				<div id="blogtopic3">
-					<h2><a href="#" onclick="return false">Print Design</a></h2>
-					<ul>
-					<li><a href="#">>> None</a></li>
-					
-					</ul>
-				</div>
-				<div id="blogtopic4">
-					<h2><a href="#" onclick="return false">Mobile and App Design</a></h2>
-					<ul>
-					<li><a href="#">>> None</a></li>
-					
-					</ul>
-				</div>
-					<img src="images/rob.jpg" alt="Portrait of Rob Oxley" />
-					<p>Rob Oxley is a designer with experience in web, print, and illustration. He has a passion for intelligent design that not only informs the viewer, but is also fresh and exciting.</p>
-					<img src="images/steve.jpg" alt="Portrait of Steve Oxley" />
-					<p>Steven Oxley is a programmer who can do a wide variety of cool things. Such as, making a "W" with his tongue. He is also an extremely driven individual who loves to find the best solution for the problem.</p>
-				</div>
-				<div id="blogcontent">
-					<div class="blogentry"><a name="introductions"></a>
-					<h3>Introductions</h3>
-					<p>Since I'm starting a new blog here, I suppose it would make sense to first introduce myself. My name is Robert Oxley and I am a graphic designer. The way I got into graphic design was a bit convoluted. When I first started at university I was a computer science major. I chose this for a number of reasons some of which included that I love computers, and I wanted to create things. Well after two years in the computer science program at my university, I realized that it was not exactly the career path I wanted to pursue the rest of my life. Unfortunately, I didn't know what I wanted to do instead. It was at this point that I took a year off college to reassess my goals and what I really wanted to do with my life. During this time, I took a volunteer position teaching at a mission school on the border of Mexico in Southern California. While at the school, I taught 1st through 8th grade P.E., 2nd through 6th grade art, and 7th grade ESL math. I have always had a passion for art, and while working at the school I began to consider it as a possibility for a career. After my year was complete and I was headed back to university, I thought about how I could combine my passions. Since I already had a strong computer background, I enjoyed creating, and I loved art, Graphic Design just seemed like a natural fit. While I love all of Graphic Design, I would have to say that what I am most passionate about is probably web design. I love print design as well, but it's hard to deny the power and scope of distribution that web design affords. So that's a little bit of the history of how I came to pursue Graphic Design as my field of expertise. Hopefully my blog posts can share a little insight and help others in their creative journeys. Everyone's journey is a bit different but it's nice to share together.
-					<span class="byline">-Rob</span></p>
-					</div>
-					<div class="clearfix"></div>
-					
-				</div>
-			</div>
-		
-	</div>
-	
-</div>
-<div id="footer">
+  </div>
+</section>
+
+<section class="content">
+  <h1 class="sectionTitle">Work Samples</h1>
+
+  <div class="workBlock sites clearafter">
+    <div class="workHeader">
+      <h2 class="workTitle">
+        Websites
+      </h2>
+    </div>
+    <div class="workContent">
+      <div class="workDesc">
+        <h3>
+        Building a Beautiful User Experience One Feature at a Time
+		</h3>
+        <div class="text">
+          <p>
+            Working at <a href="http://www.tirerack.com" target="blank">Tire Rack</a> has provided a broad range of opportunities to build features for a very diverse group of users. With both retail and business to business features being built and improved daily, each project has brought new and interesting design challenges. Each has a different set of user goals to keep in mind, and different workflows which help accomplish them. From new ways to view and compare products to saving favorite individual items or sets, each feature brings unique problems to consider. With the retail site having just undergone a total redesign, each feature has been evaluated and reimagined to reach a broader audience.
+          </p>
+          <p>
+            In addition to the various user goals to consider, the work spans a broad range of aesthetics to accomplish this. In order to maintain the strength and quality of numerous different brands, each project is closely reviewed and informed by the numerous tire and auto manufacturing partners. This brings the opportunity to work within many diverse branding guidelines and create new features and products for each one.
+          </p>
+        </div>
+      </div>
+      <div class="workImg">
+        <h3 class="examples">Examples</h3>
+        <a href="https://placekitten.com/g/1000/1000" alt="This is caption text 1"><span>This is Text</span></a>
+        <a href="https://placekitten.com/g/1000/700" alt="This is caption text 2"><span>This is Text</span></a>
+        <a href="https://placekitten.com/g/700/1000" alt="This is caption text 3"><span>This is Text</span></a>
+        <a href="https://placekitten.com/g/1100/1000" alt="This is caption text 4"><span>This is Text for a description</span></a>
+
+      </div>
+    </div>
+  </div>
+  <div class="workBlock email clearafter">
+    <div class="workHeader">
+      <h2 class="workTitle">
+        Email
+      </h2>
+    </div>
+    <div class="workContent">
+      <div class="workDesc">
+        <h3>
+        Creating Content for Every Inbox
+      </h3>
+        <div class="text">
+          <p>
+            Email brings with it very unique and interesting challenges. Not only is there the importance of tailoring content which will fit and be relevant to each recipient, but also the content must be designed in a way that it looks good and engages users across the entire spectrum of email clients. While not easy, this provides the opportunity to come up with creative solutions that suit both the users interests as well as their technological requirements no matter if they are viewing on desktop or mobile.
+          </p>
+          <p>
+            Whether it is a wholesale newsletter, or a retail Father's Day email each campaign must appeal to a different audience. With the recent retail site redesign, every retail email campaign has been redesigned to better fit the needs of the users. Dynamic content which accommodates the interests and past selections of the users has been reimagined along with a fresh new look to bring life to each campaign.
+          </p>
+        </div>
+      </div>
+      <div class="workImg">
+        <h3 class="examples">Examples</h3>
+        <a href="https://placekitten.com/g/1000/1000" alt="This is caption text 1"><span>This is Text</span></a>
+        <a href="https://placekitten.com/g/1000/700" alt="This is caption text 2"><span>This is Text</span></a>
+        <a href="https://placekitten.com/g/700/1000" alt="This is caption text 3"><span>This is Text</span></a>
+        <a href="https://placekitten.com/g/1100/1000" alt="This is caption text 4"><span>This is Text for a description</span></a>
+
+      </div>
+    </div>
+  </div>
+  <div class="workBlock ads clearafter">
+    <div class="workHeader">
+      <h2 class="workTitle">
+        Advertising
+      </h2>
+    </div>
+    <div class="workContent">
+      <div class="workDesc">
+        <h3>
+        Promotions and Programs for Everyone
+      </h3>
+        <div class="text">
+          <p>
+            Part of being successful is letting people know all the great things that are available. There are always new promotional capaigns and incentive programs running for both retail and wholesale customers. Alongside that, there are also advertisements running to inform users of the different features and content offered on the site. Each of these advertising campaigns requires careful thought and planning to reach its audience. The promotional campaigns also require combining Tire Rack branding with our manufacturing partners' branding in a way that compliments both.
+          </p>
+        </div>
+      </div>
+      <div class="workImg">
+        <h3 class="examples">Examples</h3>
+        <a href="https://placekitten.com/g/1000/1000" alt="This is caption text 1"><span>This is Text</span></a>
+        <a href="https://placekitten.com/g/1000/700" alt="This is caption text 2"><span>This is Text</span></a>
+        <a href="https://placekitten.com/g/700/1000" alt="This is caption text 3"><span>This is Text</span></a>
+        <a href="https://placekitten.com/g/1100/1000" alt="This is caption text 4"><span>This is Text for a description</span></a>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="overlay">
+    <div class="caption"></div>
+    <div class="close">X</div>
+  </div>
+
+</section>
+<div id="footer" class="content">
 <p>
-Copyright &copy; 2012 Robert Oxley. Design by Robert Oxley. All Rights Reserved.
+Copyright &copy; 2015 Robert Oxley. All Rights Reserved.
 </p>
 </div>
 </body>
