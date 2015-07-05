@@ -80,7 +80,8 @@ a:hover {
 
 .header h1.sectionTitle {
   font-family: 'Roboto', sans-serif;
-  font-size: 2.55em;
+  font-size: 2.6em;
+  white-space: nowrap;
   margin-bottom: 25px;
 }
 
@@ -216,13 +217,14 @@ a:hover {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 300;
   font-size: 1.5em;
-  line-height: 1.5em;
+  line-height: 1.4em;
   position: relative;
   display: inline-block;
   max-width: 30%;
   margin-right: 5%;
   vertical-align: top;
   margin-top: 20px;
+  margin-bottom: 35px;
 }
 
 .workDesc h3:after {
