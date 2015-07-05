@@ -279,8 +279,39 @@ a:hover {
   border: none;
 }
 
-.sites .workImg a + a + a + a {
+.sites .workImg a {
+  background: url('../images/tr_thumb1.jpg');
+}
+.sites .workImg a + a {
+  background: url('../images/tr_thumb2.jpg');
+}
+.sites .workImg a + a + a{
+  background: url('../images/tr_thumb3.jpg');
+}
+.sites .workImg a + a + a + a  {
+  background: url('../images/mit_thumb.jpg');
+}
+.sites .workImg a + a + a + a + a {
+  background: url('../images/ast_thumb.jpg');
+}
+.sites .workImg a + a + a + a + a + a {
+  background: url('../images/sub_thumb.jpg');
+}
+.sites .workImg a + a + a + a + a + a + a{
   background: url('../images/mas_thumb.jpg');
+}
+
+.email .workImg a {
+  background: url('../images/it_thumb.jpg');
+}
+.email .workImg a + a {
+  background: url('../images/gg_thumb.jpg');
+}
+.email .workImg a + a + a{
+  background: url('../images/cj_thumb.jpg');
+}
+.email .workImg a + a + a + a  {
+  background: url('../images/whsl_thumb.jpg');
 }
 
 .workImg span {
