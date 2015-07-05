@@ -80,7 +80,7 @@ a:hover {
 
 .header h1.sectionTitle {
   font-family: 'Roboto', sans-serif;
-  font-size: 2.6em;
+  font-size: 2.5em;
   margin-bottom: 25px;
 }
 
@@ -99,7 +99,7 @@ a:hover {
 }
 
 .bio {
-  margin: 0 auto 40px;
+  margin: 0 auto 60px;
   max-width: 660px;
 }
 
@@ -275,6 +275,10 @@ a:hover {
   text-decoration: none;
   color: #fff;
   border: none;
+}
+
+.sites .workImg a + a + a + a {
+  background: url('../images/mas_thumb.jpg');
 }
 
 .workImg span {
