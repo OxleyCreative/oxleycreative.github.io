@@ -151,13 +151,29 @@ a:hover {
 }
 
 .bio a {
-  display: inline;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.bio a:hover {
+  border-bottom: 1px dashed #fff;
+}
+
+.bio .contact {
+  font-size: .8em;
+  margin: 5px 0 0;
+  line-height: 1em;
 }
 
 .workBlock {
-  border-top: dashed 1px #000;
+  /*border-top: dashed 1px #000;*/
   border-bottom: dashed 1px #000;
   transition: margin-top 3s ease;
+  padding-bottom: 40px;
+}
+
+.workBlock:first-of-type {
+  border-top: dashed 1px #000;
 }
 
 .workBlock.expanded {
@@ -166,17 +182,14 @@ a:hover {
 
 .sites .workHeader {
   background: url('../images/square_work.jpg') left top;
-  cursor: pointer;
 }
 
 .email .workHeader {
   background: url('../images/square_work.jpg') left center;
-  cursor: pointer;
 }
 
 .ads .workHeader {
   background: url('../images/square_work.jpg') left bottom;
-  cursor: pointer;
 }
 
 .workHeader {
@@ -191,7 +204,7 @@ a:hover {
   width: 7em;
   height: 7em;
   text-align: center;
-  background: none;
+  background: rgba(0,0,0,.7);
   position: absolute;
   font-family: 'Roboto Condensed', sans-serif;
   text-transform: uppercase;
@@ -201,16 +214,16 @@ a:hover {
   left: 50%;
   margin: -3.5em 0 0 -3.5em;
   top: 50%;
-  transition: background-color 0.75s ease, top 2.5s ease;
+  /*transition: background-color 0.75s ease, top 2.5s ease;*/
   color: #fff;
 }
 
 .workDesc {
-  padding: 20px 5%;
+  padding: 20px 5% 0;
 }
 
 .workContent {
-  display: none;
+  /*display: none;*/
 }
 
 .workDesc h3 {
@@ -251,7 +264,7 @@ a:hover {
 
 .workImg {
   text-align: center;
-  padding: 0 2% 20px 0;
+  padding: 0 0 20px;
 }
 
 .workImg h3 {
@@ -260,7 +273,7 @@ a:hover {
   padding: 20px;
   display: block;
   margin: 30px auto;
-  width: 200px;
+  width: 220px;
 }
 
 .workImg a {
@@ -298,7 +311,7 @@ a:hover {
   background: url('../images/sub_thumb.jpg');
 }
 .sites .workImg a + a + a + a + a + a + a{
-  background: url('../images/mas_thumb.jpg');
+  background: url('../images/lot_thumb.jpg');
 }
 
 .email .workImg a {
@@ -312,6 +325,19 @@ a:hover {
 }
 .email .workImg a + a + a + a  {
   background: url('../images/whsl_thumb.jpg');
+}
+
+.ads .workImg a {
+  background: url('../images/pirelli_thumb.jpg');
+}
+.ads .workImg a + a {
+  background: url('../images/yoko_thumb.jpg');
+}
+.ads .workImg a + a + a{
+  background: url('../images/rhp_thumb.jpg');
+}
+.ads .workImg a + a + a + a  {
+  background: url('../images/sumi_thumb.jpg');
 }
 
 .workImg span {
@@ -344,7 +370,7 @@ a:hover {
   content: "";
   height: 100%;
   width: 100%;
-  background: rgba(0,0,0,.5);
+  background: rgba(0,0,0,.7);
   display: block;
 }
 .workImg a:hover:after {
