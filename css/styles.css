@@ -6,7 +6,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 1rem;
-  min-width: 380px;
+  min-width: 340px;
 }
 
 p {
@@ -49,7 +49,7 @@ a:hover {
   width: 100%;
   z-index: 10;
   line-height: 40px;
-  min-width: 380px;
+  min-width: 340px;
 }
 
 .links {
@@ -427,8 +427,9 @@ a:hover {
   content: "";
   height: 100%;
   width: 100%;
-  background: rgba(0,0,0,.7);
+  background: rgba(0,0,0,.6);
   display: block;
+  border-radius: 200px;
 }
 .workImg a:hover:after {
   visibility: hidden;
@@ -490,6 +491,12 @@ a:hover {
       display: block;
       max-width: 100%;
     }
+	.header .contentBox {
+	  max-width: 260px;
+	  padding: 15px 5% 20px;
+	  margin: 0 auto;
+	  background: rgba(255, 255, 255, .7);
+	}
 }
 @media screen 
   and (max-width: 700px)
