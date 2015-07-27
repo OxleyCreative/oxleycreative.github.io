@@ -385,15 +385,18 @@ a:hover {
 }
 
 .ads .workImg a {
-  background: url('../images/pirelli_thumb.jpg');
+  background: url('../images/motown_thumb.jpg');
 }
 .ads .workImg a + a {
-  background: url('../images/yoko_thumb.jpg');
+  background: url('../images/pirelli_thumb.jpg');
 }
 .ads .workImg a + a + a{
+  background: url('../images/yoko_thumb.jpg');
+}
+.ads .workImg a + a + a + a{
   background: url('../images/rhp_thumb.jpg');
 }
-.ads .workImg a + a + a + a  {
+.ads .workImg a + a + a + a + a{
   background: url('../images/sumi_thumb.jpg');
 }
 
