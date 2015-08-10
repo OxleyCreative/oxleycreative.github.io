@@ -430,7 +430,7 @@ a:hover {
   content: "";
   height: 100%;
   width: 100%;
-  background: rgba(0,0,0,.6);
+  background: rgba(0,0,0,.5);
   display: block;
   border-radius: 200px;
 }
