@@ -13,7 +13,6 @@ p {
   line-height: 1.75em;
   margin: 0 0 1.5em;
   font-size: 1em;
-  /*Chrome Fix*/
 }
 
 a {
@@ -32,19 +31,11 @@ a:hover {
   padding: 0 10px;
 }
 
-/*.clearafter:after {
-  content: " ";
-  height: 0;
-  width: 0;
-  display: block;
-  clear: both;
-}*/
-
 .navigation {
   position: fixed;
   top: 0;
   height: 40px;
-  background: #333;
+  background: rgba(0,0,0,.8);
   text-align: right;
   width: 100%;
   z-index: 10;
@@ -159,7 +150,6 @@ a:hover {
   border-radius: 270px;
   margin: 0 30px 0 55px;
   width: 270px;
-  /*margin: 0 auto 10px;*/
   display: inline-block;
   vertical-align: middle;
 }
@@ -217,7 +207,6 @@ a:hover {
 }
 
 .workBlock {
-  /*border-top: dashed 1px #000;*/
   transition: margin-top 3s ease;
   padding-bottom: 40px;
 }
@@ -271,16 +260,11 @@ a:hover {
   left: 50%;
   margin: -3.5em 0 0 -3.5em;
   top: 50%;
-  /*transition: background-color 0.75s ease, top 2.5s ease;*/
   color: #fff;
 }
 
 .workDesc {
   padding: 20px 5% 0;
-}
-
-.workContent {
-  /*display: none;*/
 }
 
 .workDesc h3 {
@@ -339,7 +323,7 @@ a:hover {
   height: 200px;
   overflow: hidden;
   display: inline-block;
-  background: url('https://placekitten.com/g/210/200');
+  background: #000;
   background-size: cover;
   margin: 2%;
   position: relative;
@@ -391,13 +375,13 @@ a:hover {
   background: url('../images/pirelli_thumb.jpg');
 }
 .ads .workImg a + a + a{
-  background: url('../images/yoko_thumb.jpg');
+  background: url('../images/kumho_thumb.jpg');
 }
 .ads .workImg a + a + a + a{
   background: url('../images/rhp_thumb.jpg');
 }
 .ads .workImg a + a + a + a + a{
-  background: url('../images/sumi_thumb.jpg');
+  background: url('../images/pirelli_stw_thumb.jpg');
 }
 
 .workImg span {
@@ -425,8 +409,6 @@ a:hover {
 }
 
 .workImg a:after {
-  /*content: "This is text";
-  position: absolute;*/
   content: "";
   height: 100%;
   width: 100%;
