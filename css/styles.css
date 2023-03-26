@@ -1,4 +1,4 @@
-@import url('http://fonts.googleapis.com/css?family=Roboto:400,300|Roboto+Condensed:400,300,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,300|Roboto+Condensed:400,300,700');
 
 body {
   background: #fff;
@@ -12,7 +12,7 @@ body {
 p {
   line-height: 1.75em;
   margin: 0 0 1.5em;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 a {
@@ -28,7 +28,6 @@ a:hover {
 .content {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 10px;
 }
 
 .navigation {
@@ -78,8 +77,8 @@ a:hover {
 }
 
 #home, #talent, #websites, #email, #ads {
-  margin-top: -50px;
-  padding-top: 50px;
+  margin-top: -40px;
+  padding-top: 40px;
 }
 
 .sectionTitle {
@@ -90,7 +89,7 @@ a:hover {
   margin-bottom: 45px;
 }
 
-.sectionTitle:after {
+.sectionTitle::after {
   content: "";
   display: block;
   position: absolute;
@@ -100,18 +99,34 @@ a:hover {
   bottom: -10px;
 }
 
+.sideSpacing {
+  padding: 0 5%;
+}
+
 .header {
   background: url('../images/header_background.jpg') bottom;
   background-size: cover;
-  padding: 40px 10px;
-  margin: 40px 0;
+  padding: 80px 10px 200px;
+  position: relative;
+}
+
+.header::after {
+  background: url('../images/curve_overlay.svg') bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .header .contentBox {
   max-width: 260px;
   padding: 15px 40px 20px;
   margin: 0 auto;
-  background: rgba(255, 255, 255, .7);
+  background: rgba(255, 255, 255, .85);
 }
 
 .header .contentBox img {
@@ -143,19 +158,19 @@ a:hover {
 
 .bio {
   margin: 0 auto 60px;
-  max-width: 660px;
+  max-width: 700px;
 }
 
 .bio img {
   border-radius: 270px;
   margin: 0 30px 0 55px;
-  width: 270px;
+  width: 230px;
   display: inline-block;
   vertical-align: middle;
 }
 
 .bio div {
-  width: 300px;
+  width: 320px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -163,8 +178,8 @@ a:hover {
 .bio h3 {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 300;
-  font-size: 1.5em;
-  line-height: 1.5em;
+  font-size: 1.7em;
+  line-height: 1.7em;
   position: relative;
   display: inline-block;
 }
@@ -183,7 +198,6 @@ a:hover {
   font-size: 1.125em;
   font-style: italic;
   margin: 15px 0;
-  text-indent: -.3em;
 }
 
 .bio p {
@@ -207,7 +221,6 @@ a:hover {
 }
 
 .workBlock {
-  transition: margin-top 3s ease;
   padding-bottom: 40px;
 }
 
@@ -261,27 +274,50 @@ a:hover {
   margin: -3.5em 0 0 -3.5em;
   top: 50%;
   color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.workTitle img {
+  max-height: 60%;
+  max-width: 60%;
+}
+
+.cartIcon {
+  margin-left: -4%;
 }
 
 .workDesc {
   padding: 20px 5% 0;
 }
 
-.workDesc h3 {
+.workDesc h3, .workDesc h1, .leftRail {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 300;
-  font-size: 1.5em;
-  line-height: 1.4em;
+  font-size: 1.7em;
+  line-height: 1.2em;
   position: relative;
   display: inline-block;
   max-width: 30%;
+  min-width: 30%;
   margin-right: 5%;
   vertical-align: top;
   margin-top: 20px;
   margin-bottom: 35px;
 }
 
-.workDesc h3:after {
+.leftRail {
+  width: 100%;
+  max-width: 100%;
+  font-size: 1.4em;
+}
+
+.workDesc.caseStudyContent .text {
+  max-width: 100%;
+}
+
+.workDesc h3::after, .workDesc h1::after, .leftRail::after {
   content: "";
   display: block;
   position: absolute;
@@ -308,13 +344,79 @@ a:hover {
   padding: 0 0 20px;
 }
 
-.workImg h3 {
+.imageBorder {
+  border: 1px solid #ddd;
+}
+
+.readMore a, .readMore span {
   font-weight: 300;
   border: 1px solid #ddd;
   padding: 20px;
   display: block;
   margin: 30px auto;
   width: 220px;
+  text-align: center;
+}
+
+.readMore a:hover {
+  border: 1px solid #289;
+  border-radius: 4px;
+}
+
+.readMore a::after, .backTo::before {
+  content: "";
+  background: url("../images/arrow.svg") no-repeat;
+  height: 20px;
+  width: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 1px;
+}
+
+.backTo::before {
+  transform: scaleX(-1);
+  filter: invert(95%) sepia(85%) saturate(1%) hue-rotate(215deg) brightness(108%) contrast(101%);
+  margin-top: 2px;
+}
+
+.backTo:hover::before {
+  filter: invert(43%) sepia(40%) saturate(756%) hue-rotate(141deg) brightness(96%) contrast(91%);
+}
+
+.keepReading {
+  position: relative;
+}
+
+.keepReading::after {
+  content: "";
+  background: url("../images/doubleArrow_white.svg") #ddd no-repeat;
+  background-size: 20px 20px;
+  background-position: 7px 8px;
+  height: 34px;
+  width: 34px;
+  position: absolute;
+  bottom: -17px;
+  left: calc(50% - 17px);
+  border-radius: 34px;
+}
+
+.imageSection img {
+  max-width: 100%;
+  margin: auto;
+  display: block;
+}
+
+.flexImages {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.caption {
+  color: #666;
+  font-size: .9em;
+  font-style: italic;
+  text-align: center;
 }
 
 .workImg a {
@@ -331,57 +433,6 @@ a:hover {
   text-decoration: none;
   color: #fff;
   border: none;
-}
-
-.sites .workImg a {
-  background: url('../images/tr_thumb1.jpg');
-}
-.sites .workImg a + a {
-  background: url('../images/tr_thumb2.jpg');
-}
-.sites .workImg a + a + a{
-  background: url('../images/tr_thumb3.jpg');
-}
-.sites .workImg a + a + a + a  {
-  background: url('../images/mit_thumb.jpg');
-}
-.sites .workImg a + a + a + a + a {
-  background: url('../images/ast_thumb.jpg');
-}
-.sites .workImg a + a + a + a + a + a {
-  background: url('../images/sub_thumb.jpg');
-}
-.sites .workImg a + a + a + a + a + a + a{
-  background: url('../images/lot_thumb.jpg');
-}
-
-.email .workImg a {
-  background: url('../images/it_thumb.jpg');
-}
-.email .workImg a + a {
-  background: url('../images/gg_thumb.jpg');
-}
-.email .workImg a + a + a{
-  background: url('../images/cj_thumb.jpg');
-}
-.email .workImg a + a + a + a  {
-  background: url('../images/whsl_thumb.jpg');
-}
-
-.ads .workImg a {
-  background: url('../images/motown_thumb.jpg');
-}
-.ads .workImg a + a {
-  background: url('../images/pirelli_thumb.jpg');
-}
-.ads .workImg a + a + a{
-  background: url('../images/kumho_thumb.jpg');
-}
-.ads .workImg a + a + a + a{
-  background: url('../images/rhp_thumb.jpg');
-}
-.ads .workImg a + a + a + a + a{
-  background: url('../images/pirelli_stw_thumb.jpg');
 }
 
 .workImg span {
@@ -421,7 +472,8 @@ a:hover {
 }
 #footer p {
   border-top: dashed 1px #333;
- }
+  padding: 5px 5%;
+}
  
 .overlay {
   display: none;
@@ -468,6 +520,17 @@ a:hover {
   cursor: pointer;
 }
 
+.caseStudy {
+  margin-top: 40px;
+}
+
+.contributions strong {
+  font-weight: 500;
+}
+
+.contributions strong, span {
+  display: block;
+}
 
 
 /* Media Queries */
@@ -487,22 +550,20 @@ a:hover {
 	  font-size: 1em;
 	}
 }
-@media screen 
-  and (max-width: 550px)
+@media screen and (max-width: 999px)
 {
-    .workDesc .text, .workDesc h3 {
-      display: block;
-      max-width: 100%;
-    }
+  .workDesc .text, .workDesc h3, .workDesc h1, .leftRail {
+    display: block;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 550px)
+{
 	.header .contentBox {
-	  max-width: 260px;
 	  padding: 15px 5% 20px;
-	  margin: 0 auto;
-	  background: rgba(255, 255, 255, .7);
 	}
 }
-@media screen 
-  and (max-width: 700px)
+@media screen and (max-width: 700px)
 {
 	.bio {
 	  max-width: 300px;
