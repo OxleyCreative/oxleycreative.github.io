@@ -404,12 +404,18 @@ a:hover {
   max-width: 100%;
   margin: auto;
   display: block;
+  min-width: 0;
+}
+
+.imageSection iframe {
+  max-height: 70vh;
 }
 
 .flexImages {
   display: flex;
   gap: 20px;
   align-items: flex-start;
+  max-width: 100%;
 }
 
 .caption {
@@ -555,6 +561,10 @@ a:hover {
   .workDesc .text, .workDesc h3, .workDesc h1, .leftRail {
     display: block;
     max-width: 100%;
+  }
+  .imageSection iframe {
+    margin: 0 5%;
+    max-width: 90%;
   }
 }
 @media screen and (max-width: 550px)
