@@ -405,10 +405,12 @@ a:hover {
   margin: auto;
   display: block;
   min-width: 0;
+  box-sizing: border-box;
 }
 
 .imageSection iframe {
   max-height: 70vh;
+  box-sizing: border-box;
 }
 
 .flexImages {

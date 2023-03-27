@@ -49,108 +49,72 @@
       </div>
       <div class="readMore"><span class="keepReading">Keep Reading</span></div>
       <div class="workDesc caseStudyContent">
-        <div class="leftRail">Working on Our Flow</div>
+        <div class="leftRail">Can We Help You Find What You&rsquo;re Looking For?</div>
         <div class="text">
           <p>
-            One of the first things we needed to do was map out the current checkout process. Buying tires can be a complicated and confusing process to users and we knew that if we asked for too much information too quickly it could be overwhelming. So we tried to streamline the process as much as possible while restructuring where we asked for some information. 
+            The Tire Decision Guide starts off by asking users a series of questions such as what vehicle they drive, the conditions they drive in, and other general information. Then it asks the user to rate their priorities from one to five including price, wet performance, dry performance, etc. We use this information to generate up to three tire recommendations based on the user's answers. One of the key portions of the design is the recommendations bar at the top of the page which shows the user which attributes were used to select the recommendations. We found it helps give the user confidence that they are getting something they want. If the user were to edit their priorities they would be able to see the recommendations switch. It also includes a link to log in and save the results. That way, even if they don&rsquo;t purchase something right away, they can always reference it later. 
           </p>
         </div>
       </div>
       <div class="imageSection">
-        <img src="images/old_flow.gif" alt="Old Checkout Flow">
-        <p class="caption">fig 1. old flow map</p>
-      </div>
-      <div class="imageSection">
-        <img src="images/new_flow.gif" alt="New Checkout Flow">
-        <p class="caption">fig 2. new flow map</p>
+        <img class="imageBorder" src="images/recommendations.gif" alt="Recommendations Block">
+        <p class="caption">fig 1. recommendations block</p>
       </div>
       <div class="workDesc caseStudyContent">
-        <div class="leftRail">Where is the Fall-Off Coming From?</div>
+        <div class="leftRail">What Can We Bring to the Table?</div>
         <div class="text">
           <p>
-            After reviewing, one of our findings was how front-loaded our information and decision making for the user could feel. In some scenarios there could be multiple modals that would require them to enter information or make a decision before even proceeding from the cart to the rest of the checkout. Then once they were able to proceed they were hitting a page that made them decide between logging in or proceeding as a guest. We were seeing a large bounce rate here so we dug in further.  
+            When it comes to comparing information, it&rsquo;s hard to beat a table. We had to take some considerations for accessibility and mobile screen sizes when implementing, but we wanted users to be able to quickly cross reference all the different aspects of the tires. We noticed too that it can be easy to forget which column pertains to which tire. To counteract this we implemented sliding headers to help the user stay oriented throughout their comparison, and also allow them easy access to the &ldquo;add to cart&rdquo; button whenever they were ready to purchase.   
           </p>
         </div>
       </div>
       <div class="imageSection">
-        <img src="images/checkout_dropoff.gif" alt="Checkout Drop-Off Graph">
-        <p class="caption">fig 3. checkout fall-off graph</p>
+        <img class="imageBorder" src="images/sliding_header.gif" alt="Sliding Headers">
+        <p class="caption">fig 2. sliding headers</p>
       </div>
       <div class="workDesc caseStudyContent">
-        <div class="leftRail">Are We Meeting Expectations? How Can We Make This Easier?</div>
+        <div class="leftRail">We'd Love to Tell You How These Rate</div>
         <div class="text">
           <p>
-            User testing indicated that most users weren&rsquo;t even expecting to hit a login screen at this point in the process. We also learned that many people weren&rsquo;t seeing the guest checkout option. There were a couple other factors we thought might be contributing as well. An average consumer will only purchase tires once every few years. This meant that many users weren&rsquo;t able to remember their passwords, or if they even had an account at all. 
-          </p>
-          <p>
-            We thought of a couple ways to remedy this that we could test. First was creating a login page which featured the guest checkout more prominently so that users wouldn&rsquo;t miss it as easily. Second was the addition of third party login options so that users would be less likely to be frustrated by forgotten passwords or account information. 
+            Another facet of the design we took into consideration was the order of the information. User testing has shown that reviews and performance testing are two of the most crucial pieces of information to a purchase. So we kept that info to the top of the page and very easily accessible. We added an expanded view so users could get the fine details on each performance category.
           </p>
         </div>
       </div>
       <div class="imageSection">
-        <img class="imageBorder" src="images/checkout_login.png" width="200" alt="Login Page">
-        <p class="caption">fig 4. checkout login page redesign</p>
+        <img class="imageBorder" src="images/ratings.jpg" alt="Ratings Dropdown">
+        <p class="caption">fig 3. ratings dropdown</p>
       </div>
       <div class="workDesc caseStudyContent">
-        <div class="leftRail">Can We More Smoothly Encourage Users to Log In or Create an Account?</div>
+        <div class="leftRail">Figure Out How Any Product Stacks Up</div>
         <div class="text">
           <p>
-            The other approach we formulated was skipping the login page entirely and making checkout as guest the default path. This allowed the user to proceed unimpeded. The downside of this approach is obviously that the user then might have an account that they aren&rsquo;t leveraging. To help alleviate this we decided to add a login reminder banner that would allow the user to quickly and easily log in at any point and harness any information they already had entered in their account.
+            We also found that some users wanted that ability to compare tires side-by-side, but they didn&rsquo;t need us to give them any recommendations. To accomplish this, while building on to what we had established with the Tire Decision Guide, we implemented what we called the Compare Bar on our product search pages. This allowed users to select any products they wanted from the search page to the Compare Bar, and then they could view them all in a table and compare each data point just like on the Tire Decision Guide.
           </p>
         </div>
       </div>
       <div class="imageSection">
-        <img class="imageBorder" src="images/login_banner.png" alt="Login Page">
-        <p class="caption">fig 5. login banner example</p>
+        <img class="imageBorder" src="images/compare_drawer.jpg" alt="Compare Drawer">
+        <p class="caption">fig 4. compare drawer</p>
+      </div>
+      <div class="imageSection">
+        <img class="imageBorder" src="images/comparedrawer_expanded.jpg" alt="Compare Drawer Expanded">
+        <p class="caption">fig 5. compare drawer expanded</p>
       </div>
       <div class="workDesc caseStudyContent">
-        <div class="leftRail">Creating Tools for Easier Orientation and Review</div>
+        <div class="leftRail">So How Did We Do?</div>
         <div class="text">
           <p>
-            Another thing we found that users had difficulty with was just not knowing what to expect from the checkout process in general. They didn&rsquo;t have clear ideas as to the length, what information they would be asked for, or decisions they would be asked to make in some cases. To counteract some of these feelings we developed a feature we dubbed the “step header.” The first goal was to help orient the user within the process and give them a general idea of how much further they had to go. The second goal was to give users a way to easily review the decisions they had made and information they had entered. The third goal was to give users a way to quickly return to and edit any of those decisions and information. The feature met these goals through an interactive progress bar that gives the user a general idea of progression as well as some sense of how long the overall process is. It also included a slide-out that allowed users to review a summary of information entered throughout the checkout.
+            When we converted the Tire Decision Guide results to a tabular format, the increase in conversion rate for users who went through that purchasing path greatly increased. In the first few weeks it was so much higher than the control, on the order of two to three times higher, that we didn&rsquo;t have confidence it was entirely due to the redesign. In the end it did remain higher and proved to be a useful tool for those who needed it.
           </p>
         </div>
       </div>
+      <div class="readMore"><span class="keepReading">Explore the Designs</span></div>
       <div class="imageSection">
-        <img class="imageBorder" src="images/stepheader.png" alt="Step-Header Example">
-        <p class="caption">fig 6. step-header example</p>
-      </div>
-      <div class="imageSection">
-        <img class="imageBorder" src="images/stepheader_slideout.png" alt="Step-Header Slideout Example">
-        <p class="caption">fig 7. step-header slideout example</p>
-      </div>
-      <div class="workDesc caseStudyContent">
-        <div class="leftRail">Getting the Right Information at the Right Times</div>
-        <div class="text">
-          <p>
-            To combat the issue of front loading what we were asking from the users, we eliminated the information gathering modals that could pop-up when trying to proceed from the cart. We moved those questions and added them as sub-steps to our main information-gathering page. This also helped with setting user expectations and allowed them to feel more confident in the process. 
-          </p>
-        </div>
-      </div>
-      <div class="imageSection">
-        <div class="flexImages">
-          <img class="imageBorder" src="images/2a.png" alt="Sub-Step Page Example">
-          <img class="imageBorder" src="images/2b.png" alt="Sub-Step Page Example">
-          <img class="imageBorder" src="images/2c.png" alt="Sub-Step Page Example">
-          <img class="imageBorder" src="images/2d.png" alt="Sub-Step Page Example">
-        </div>
-        <p class="caption">fig 8. sub-steps example</p>
-      </div>
-      <div class="workDesc caseStudyContent">
-        <div class="leftRail">Rebuilding from the Ground Up</div>
-        <div class="text">
-          <p>
-            Overall, the checkout process was redesigned front-to-back. Every aspect was considered and analysized with decisions from small to large being discussed and made on every page. Please explore the prototypes below to see some of the work that went into rebuilding the checkout.
-          </p>
-        </div>
-      </div>
-      <div class="readMore"><span class="keepReading">Explore the Prototypes</span></div>
-      <div class="imageSection">
-        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="750" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FOI1HHlNDe3hhBFTHo5AKp6%2FMacBook-Checkout-Prototype%3Fpage-id%3D0%253A1%26node-id%3D1-353%26viewport%3D2780%252C436%252C0.28%26scaling%3Dscale-down%26starting-point-node-id%3D1%253A353" allowfullscreen></iframe>
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="750" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FQGn8Mcx5re1vlqXGSs6W2Z%2FMacBook-Compare-Design%3Fpage-id%3D0%253A1%26node-id%3D1-2%26viewport%3D1224%252C679%252C0.45%26scaling%3Dscale-down" allowfullscreen></iframe>
         <p class="caption">scroll within the screen to see more // click anywhere to proceed to next page</p>
       </div>
       <div class="imageSection">
-        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="750" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fn4c4SQ9Vsb9ugUXIyKADXr%2FiPhone-Checkout-Prototype%3Fpage-id%3D0%253A1%26node-id%3D1-280%26viewport%3D2538%252C1142%252C0.41%26scaling%3Dscale-down%26starting-point-node-id%3D1%253A347" allowfullscreen></iframe>
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="750" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FdwTgfppwevSooTJRknmkwy%2FiPhone-Compare-Design%3Fpage-id%3D0%253A1%26node-id%3D1-2%26viewport%3D772%252C-2650%252C0.58%26scaling%3Dscale-down" allowfullscreen></iframe>
         <p class="caption">scroll within the screen to see more // click anywhere to proceed to next page</p>
       </div>
       <div class="readMore"><a href="index.html#websites">Read More Case Studies</a></div>
