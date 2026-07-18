@@ -324,7 +324,6 @@ a:focus-visible {
   border-top: 1px solid #d4d2ca;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin: 10px 5% 0;
 }
 
 .capabilityStrip span {
