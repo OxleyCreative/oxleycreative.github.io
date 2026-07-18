@@ -153,14 +153,14 @@ a:focus-visible {
 }
 
 .header .contentBox img {
-  margin: 0 auto 15px;
+  margin: 0 auto 35px;
   display: block;
   width: 150px;
 }
 
 .header h1.sectionTitle {
   font-family: 'Roboto', sans-serif;
-  font-size: 2.6em;
+  font-size: 3em;
   white-space: nowrap;
   margin-bottom: 25px;
 }
@@ -200,7 +200,7 @@ a:focus-visible {
 }
 
 .header h1.sectionTitle:after {
-  width: 47px;
+  width: 58px;
 }
 
 .header p:not(.eyebrow) {
@@ -1065,6 +1065,10 @@ a:focus-visible {
 
   .header h1.sectionTitle {
     font-size: 2.25em;
+  }
+  
+  .header h1.sectionTitle::after {
+    width: 43px;
   }
 
   .sectionSpacing {
