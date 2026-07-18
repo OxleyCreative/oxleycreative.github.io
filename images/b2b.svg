@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 350" role="img" aria-labelledby="title desc">
+  <title id="title">Business to business</title>
+  <desc id="desc">Two people connected to a branching network.</desc>
+
+  <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="16">
+    <path d="M72 72v43c0 18 14 32 32 32h30"/>
+    <path d="M72 175h66"/>
+    <path d="M72 278v-43c0-18 14-32 32-32h30"/>
+  </g>
+
+  <g fill="#fff">
+    <circle cx="72" cy="72" r="18"/>
+    <circle cx="72" cy="175" r="18"/>
+    <circle cx="72" cy="278" r="18"/>
+  </g>
+
+  <g fill="#fff" opacity=".62">
+    <circle cx="266" cy="105" r="35"/>
+    <path d="M224 236c2-54 11-89 42-89s48 35 52 89c-29 17-64 17-94 0z"/>
+  </g>
+
+  <g fill="#fff">
+    <circle cx="198" cy="126" r="42"/>
+    <path d="M140 270c3-69 17-112 58-112s57 43 61 112c-38 22-81 22-119 0z"/>
+  </g>
+</svg>
