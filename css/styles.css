@@ -428,7 +428,7 @@ a:focus-visible {
   font-size: 1.4em;
 }
 
-.workDesc.caseStudyContent .text {
+.workDesc.caseStudyContent .text, .workDesc.caseStudyContent h2 {
   max-width: 100%;
 }
 
