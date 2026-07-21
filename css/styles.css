@@ -319,11 +319,52 @@ a:focus-visible {
   letter-spacing: .06em;
 }
 
+.capabilities {
+  text-align: center;
+  position: relative;
+}
+
+.highlightsHeader {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  padding: 0.65rem 1.25rem;
+  color: #fff;
+  background: #237f8d;
+  border-radius: 50px;
+  border: 1px solid #d4d2ca;
+  width: 180px;
+  position: absolute;
+  box-sizing: border-box;
+  left: calc(50% - 90px);
+  top: -18px;
+}
+
+.highlightsHeader h2 {
+  margin: 0;
+  color: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed';
+}
+
+.highlightsIcon {
+  width: .9rem;
+  height: .9rem;
+  display: block;
+  flex: 0 0 auto;
+}
+
 .capabilityStrip {
   border-bottom: 1px solid #d4d2ca;
   border-top: 1px solid #d4d2ca;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  padding-top: 15px;
 }
 
 .capabilityStrip span {
@@ -331,10 +372,19 @@ a:focus-visible {
   font-family: 'Roboto Condensed', sans-serif;
   padding: 18px 8px;
   text-align: center;
+  display: inline-flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
 }
 
-.capabilityStrip span + span {
-  border-left: 1px solid #d4d2ca;
+.capabilityStrip span::before {
+	content: "";
+	display: inline-block;
+	height: 1rem;
+	width: 1rem;
+	background: url(../images/star-white-rounded.svg);
+	filter: invert(39%) sepia(83%) saturate(356%) hue-rotate(140deg) brightness(60%) contrast(96%);
 }
 
 .workHeader {
@@ -800,10 +850,6 @@ a:focus-visible {
   line-height: 1.6;
 }
 
-.caseStudyIntro {
-  padding: 70px 0 40px;
-}
-
 .projectFacts {
   border-top: 1px solid #ddd;
   margin-top: 32px;
@@ -921,14 +967,14 @@ a:focus-visible {
 
 .caseQuote {
   border-left: 4px solid #228899;
-  margin: 70px auto;
+  margin: 10px auto;
   max-width: 720px;
   padding: 15px 0 15px 34px;
 }
 
 .caseQuote blockquote {
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 300;
   line-height: 1.35;
   margin-bottom: 20px;
@@ -971,16 +1017,10 @@ a:focus-visible {
     min-height: 560px;
   }
 }
-@media screen and (max-width: 550px)
-{
-	.header .contentBox {
-	  padding: 15px 5% 20px;
-	}
-}
-@media screen and (max-width: 700px)
+@media screen and (max-width: 820px)
 {
 	.bio {
-	  max-width: 320px;
+	  max-width: 90%;
 	  text-align: center;
 	}
 	.bio img {
@@ -994,6 +1034,9 @@ a:focus-visible {
   .bioLinks {
     justify-content: center;
   }
+}
+@media screen and (max-width: 700px)
+{
 
   .testimonialGrid,
   .principleGrid,
@@ -1004,14 +1047,6 @@ a:focus-visible {
 
   .capabilityStrip {
     grid-template-columns: 1fr 1fr;
-  }
-
-  .capabilityStrip span:nth-child(3) {
-    border-left: 0;
-  }
-
-  .capabilityStrip span:nth-child(n+3) {
-    border-top: 1px solid #d4d2ca;
   }
 
   .dealerHero {
@@ -1051,7 +1086,12 @@ a:focus-visible {
     padding-right: 0;
   }
 }
-
+@media screen and (max-width: 550px)
+{
+	.header .contentBox {
+	  padding: 15px 5% 20px;
+	}
+}
 @media screen and (max-width: 520px) {
   .navigation li {
     margin-left: 8px;
@@ -1076,10 +1116,6 @@ a:focus-visible {
   .sectionSpacing {
     padding-bottom: 65px;
     padding-top: 65px;
-  }
-
-  .dealer .workHeader {
-    height: 280px;
   }
 
   .dealerHero {
